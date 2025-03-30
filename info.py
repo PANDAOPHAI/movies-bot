@@ -42,7 +42,7 @@ MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '0'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-IS_VERIFY = is_desebled('IS_VERIFY', false)
+IS_VERIFY = is_enabled('IS_VERIFY', false)
 #---------------------------------------------------------------
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
@@ -116,11 +116,6 @@ SETTINGS = {
             'auto_delete': AUTO_DELETE,
             'template': IMDB_TEMPLATE,
             'caption': FILE_CAPTION,
-            'tutorial': TUTORIAL,
-            'shortner': SHORTENER_WEBSITE,
-            'api': SHORTENER_API,
-            'shortner_two': SHORTENER_WEBSITE2,
-            'api_two': SHORTENER_API2,
             'log': LOG_VR_CHANNEL,
             'imdb': IMDB,
             'link': LINK_MODE, 
